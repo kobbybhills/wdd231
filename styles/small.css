@@ -1,0 +1,180 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5fdf5;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #204060; /* optional for visibility */
+    color: white;
+    padding: 1rem;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+}
+.profile img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.profile h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav{
+    display: block;
+    background-color: black;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li:hover a {
+    color: yellow;
+}
+  
+  h1 {
+    margin-left: 10px;
+    font-size: 1.4rem;
+    flex-grow: 1;
+  }
+  
+
+  
+
+  #menuBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    display: none;
+  }
+  
+
+  
+  nav a:hover {
+    background-color: #5a5656f3;
+    border-radius: 8px;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .cocoa-img{
+    height: 50%;
+  }
+  
+  .card {
+    background: white;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    flex: 1 1 300px;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .certificate {
+    background: #e9f5f9;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .filter-buttons button,
+  .course-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .course-buttons .brown {
+    background-color: #712b1f;
+    color: white;
+  }
+  
+  .course-buttons .light {
+    background-color: #f5f5f5;
+  }
+  
+  footer {
+    background-color: #204060;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  footer img {
+    height: 14px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive */
+  @media (max-width: 700px) {
+    #menuBtn {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #204060;
+      position: absolute;
+      right: 0;
+      top: 40px;
+      width: 150px;
+    }
+  
+    nav ul.open {
+      display: flex;
+    }
+  }
+  
