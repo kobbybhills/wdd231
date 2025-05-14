@@ -22,16 +22,17 @@
         <div class="profile">
             <img src="images/profile.jpg" alt="Profile Picture">
             <h1>Douglas Justice</h1>
-        </div>
-          
-        <nav>
             <button id="menuButton">☰</button>
+        </div>
+
+        <nav>
+            
             <ul id="navMenu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#" class="active">Chamber</a></li>
-                <li><a href="#" class="active">Final</a></li>
-                <li><a href="https://github.com/kobbybhills/wdd231.git" class="active" target="_blank">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/douglas-justice-6749a42b1" class="active">LinkedIn</a></li>
+                <li><a href="#" class="active-1">Home</a></li>
+                <li><a href="#" >Chamber</a></li>
+                <li><a href="#" >Final</a></li>
+                <li><a href="https://github.com/kobbybhills/wdd231.git" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/douglas-justice-6749a42b1">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
@@ -69,21 +70,18 @@
                 <button class="filter-buttons-Btn-1" id="allBtn">All</button>
                 <button class="filter-buttons-Btn-1" id="cseBtn">CSE</button>
                 <button class="filter-buttons-Btn-1" id="wddBtn">WDD</button>
+                <p>Total Credits: <span id="totalCredits"></span></p>
 
             </div>
         </div>
-        <div class="course-buttons">
-            <button class="brown">CSE 110</button>
-            <button class="brown">WDD 130</button>
-            <button class="brown">CSE 111</button>
-            <button class="light">CSE 210</button>
-            <button class="brown">WDD 131</button>
-            <button class="light">WDD 231</button>
-        </div>
+        
+      <div class="course-buttons"></div>
+      
+        
 
     </div>
     <footer>
-        <p>&copy;2025 | Douglas Justice | Ghana <img src="images/ghana-flag.webp" alt="Flag" /></p>
+        <p>&copy;<span id="currentyear"></span> | Douglas Justice | Ghana <img src="images/ghana-flag.webp" alt="Flag" /></p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/navigation.js"></script>
