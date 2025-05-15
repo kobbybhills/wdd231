@@ -1,8 +1,31 @@
 @media (max-width: 700px) {
+  .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .profile img {
+    width: 40px;
+    height: auto;
+    border-radius: 2px;
+    margin-right: 10px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    color: white;
+  }
+
   #menuButton {
     display: block;
-    margin-left: auto;
-    margin-right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
   }
 
   #mainNav {
@@ -11,12 +34,15 @@
 
   #mainNav.show {
     display: block;
+    width: 100%;
   }
 
   #mainNav ul {
+    display: flex;
     flex-direction: column;
-    background-color: #000;
     padding: 10px;
+    background-color: #000;
+    width: 100%;
   }
 
   #mainNav li {
@@ -26,5 +52,12 @@
   #mainNav a {
     color: white;
     text-decoration: none;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
   }
 }
