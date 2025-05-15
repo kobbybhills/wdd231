@@ -118,13 +118,56 @@ header {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #menuButton {
   display: none;
-  background: none;
+  background-color: transparent;
   border: none;
-  color: white;
-  font-size: 2rem;
+  padding: 0;
+  cursor: pointer;
+  font-size: 24px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Navigation bar */
 nav {

@@ -1,7 +1,12 @@
 // Toggle mobile menu
-document.getElementById("menuButton").addEventListener("click", () => {
-  document.getElementById("navMenu").classList.toggle("open");
+const menuButton = document.getElementById('menuButton');
+const nav = document.querySelector('nav');
+
+menuButton.addEventListener('click', () => {
+  nav.classList.toggle('show');
 });
+
+
 
 // Display last modified date
 document.getElementById("lastModified").textContent =
