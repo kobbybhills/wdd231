@@ -1,28 +1,35 @@
 /* Responsive */
+
 @media (max-width: 700px) {
   #menuButton {
     display: block;
     margin-left: auto;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
   }
-  
-  nav {
+
+  #mainNav {
     display: none;
   }
-  
-  nav.show {
+
+  #mainNav.show {
     display: block;
   }
-  
-  nav ul {
+
+  #mainNav ul {
     flex-direction: column;
     padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #000;
   }
-  
-  nav li {
-    margin-right: 0;
-    margin-bottom: 10px;
+
+  #mainNav li {
+    margin: 0 0 10px 0;
+  }
+
+  #mainNav a {
+    color: white;
   }
 }
-

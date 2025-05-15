@@ -139,17 +139,12 @@ header {
 
 
 
-
-
-
 #menuButton {
   display: none;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  font-size: 24px;
 }
+
+
+
 
 
 
