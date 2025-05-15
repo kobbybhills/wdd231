@@ -1,5 +1,5 @@
+// navigation.js
 
-// Toggle mobile menu
 const menuButton = document.getElementById('menuButton');
 const nav = document.getElementById('mainNav');
 
