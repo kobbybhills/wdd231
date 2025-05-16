@@ -2,93 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Course home page for WDD 231" />
-    <meta name="author" content="Douglas Justice" />
-    <title>Douglas Justice | Home</title>
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Course home page for WDD 231" />
+  <meta name="author" content="Douglas Justice" />
+  <title>Douglas Justice | Home</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link href="https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiArmlw.woff2" rel="stylesheet" />
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+
 </head>
 
 <body>
-     <!--The header -->
-    <header>
-      <div class="profile">
-        <img src="images/profile.jpg" alt="Profile Picture">
-        <h1>Douglas Justice</h1>
-        
-        <!-- Hamburger Button -->
-        <button id="menuButton">☰</button>
-      </div>
-    
-      <!-- Navigation Menu -->
-      <nav id="mainNav">
-        <ul>
-          <li><a href="#" class="active-1">Home</a></li>
-          <li><a href="#">Chamber</a></li>
-          <li><a href="#">Final</a></li>
-          <li><a href="https://github.com/kobbybhills/wdd231.git" target="_blank">GitHub Profile</a></li>
-          <li><a href="https://www.linkedin.com/in/douglas-justice-6749a42b1">LinkedIn</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Home</h1>
-      <!--First DIV With TWO Card -->
-
-        <div class="card-container">
-            <!--Placing Course Work Card -->
-            <div class="card">
-                <div class="card-header">Course Work</div>
-                <div class="card-body">
-                    <ul>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Placing Location Card -->
-            <div class="card-1">
-                <div class="card-header">Accra, Ghana</div>
-                <div class="card-body">
-                    <img src="images/cocoa.jpg" alt="cocoa"/>
-                    <p class="caption">Cocoa</p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card-2">
-                <div class="card-header">
-                    <h3>Web and Computer Programming Certificate</h3>
-                </div>
-              <div class="card-body">
-                <div class="filter-buttons">
-                    <button   id="allBtn">All</button>
-                    <button   id="cseBtn">CSE</button>
-                    <button   id="wddBtn">WDD</button>
-                    <p>Total Credits: <span id="totalCredits"></span></p>
-
-                </div>
-        </div>
-            
-        <div class="course-buttons"></div>
-    </main>
-        
-
+  <!--The header -->
+  <header>
+    <div class="profile">
+      <img src="images/profile.jpg" alt="Profile Picture">
+      <h1>Douglas Justice</h1>
+      
+      <!-- Hamburger Button -->
+      <button id="menuButton">☰</button>
+     
     </div>
-    <footer>
-        <p>&copy;<span id="currentyear"></span> | Douglas Justice | Ghana <img src="images/ghana-flag.webp" alt="Flag" /></p>
-        <p id="lastModified"></p>
-    </footer>
+
+    <!-- Navigation Menu -->
+    <nav id="mainNav">
+      <ul>
+        <li><a href="#" class="active-1">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Final</a></li>
+        <li><a href="https://github.com/kobbybhills/wdd231.git" target="_blank">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com/in/douglas-justice-6749a42b1">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Home</h1>
+    <!--First DIV With TWO Card -->
+
+    <div class="card-container">
+      <!--Placing Course Work Card -->
+      <div class="card">
+        <div class="card-header">Course Work</div>
+        <div class="card-body">
+          <ul>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Placing Location Card -->
+      <div class="card-1">
+        <div class="card-header">Accra, Ghana</div>
+        <div class="card-body">
+          <img src="images/cocoa.jpg" alt="cocoa" />
+        </div>
+        <div>
+          <p class="caption">Cocoa</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Second DIV With one Card -->
+    <div class="card-2">
+      <div class="card-header">
+        <h3>Web and Computer Programming Certificate</h3>
+      </div>
+      <div class="card-body">
+        <div class="filter-buttons">
+          <button id="allBtn">All</button>
+          <button id="cseBtn">CSE</button>
+          <button id="wddBtn">WDD</button>
+        </div>
+        <div class="total">
+          <p>Total Credits: <span id="totalCredits"></span></p>
+        </div>
+      </div>
+
+
+      <div class="course-buttons"></div>
+    </div>
+
+  </main>
+
+
+  </div>
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Douglas Justice | Ghana <img src="images/ghana-flag.webp" alt="Flag" />
+    </p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 
 </html>
