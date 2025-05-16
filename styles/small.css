@@ -33,7 +33,10 @@
 
   #mainNav.show {
     display: block;
-    width: 100%;
+    width: 30%;
+    position: absolute; 
+    right: 0;
+    top: 10;
   }
 
   #mainNav ul {

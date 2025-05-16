@@ -63,7 +63,6 @@ h1 {
 }
 
 
-
 .card-body {
   display: block;
   justify-content: center;
@@ -122,9 +121,9 @@ header {
   color: white;
   background-color: transparent;
   border: none;
-  background-color: transparent;
   font-size: 28px;
   cursor: pointer;
+  margin: 30px;
 }
 
 .profile div button {
@@ -209,7 +208,6 @@ nav ul li a:hover {
   margin: 15px;
 }
 
-
 .course,
 .completed,
 .notcompleted {
@@ -221,9 +219,7 @@ nav ul li a:hover {
   cursor: pointer;
   margin: 5px;
   text-align: center;
-
 }
-
 
 .course {
   color: white;
