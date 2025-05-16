@@ -213,7 +213,7 @@ nav ul li a:hover {
 .notcompleted {
   flex-grow: 1;
   flex-basis: 200;
-  padding: 10px 140px;
+  padding: 10px 95px;
   justify-content: space-between;
   border-radius: 10px;
   cursor: pointer;
