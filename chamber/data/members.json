@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Tech Solutions",
+    "address": "123 Innovation Rd",
+    "phone": "+233-542-523-051",
+    "website": "https://techsolutions.com",
+    "image": "tech.jpg",
+    "membership_level": 3,
+    "description": "Delivering smart, reliable technology answers."
+  },
+  {
+    "name": "Healthy Living",
+    "address": "456 Wellness Ave",
+    "phone": "+233-202-223-674",
+    "website": "https://healthyliving.org",
+    "image": "health.jpg",
+    "membership_level": 2,
+    "description": "Unlock your best self with healthy habits."
+  },
+  {
+    "name": "TechNova Solutions",
+    "address": "123 Innovation Drive, Silicon Valley, GA",
+    "phone": "+233-242-333-451",
+    "website": "https://technova.example.com",
+    "image": "technova.jpg",
+    "membership_level": 3,
+    "description": "Leading provider of AI-driven software solutions."
+  },
+  {
+    "name": "GreenLeaf Organics",
+    "address": "45 Eco Street, Portland, CK",
+    "phone": "+233-272-523-999",
+    "website": "https://greenleaf.example.com",
+    "image": "greenleaf.jpg",
+    "membership_level": 2,
+    "description": "Certified organic farm and health food provider."
+  },
+  {
+    "name": "SkyHigh Adventures",
+    "address": "789 Sky Lane, Denver, DO",
+    "phone": "+233-244-565-765",
+    "website": "https://skyhigh.example.com",
+    "image": "skyhigh.jpg",
+    "membership_level": 1,
+    "description": "Outdoor gear and guided adventure experiences."
+  },
+  {
+    "name": "ByteCrafters",
+    "address": "2020 Tech Loop, Austin, AS",
+    "phone": "+233-547-875-746",
+    "website": "https://bytecrafters.example.com",
+    "image": "bytecrafters.jpg",
+    "membership_level": 3,
+    "description": "Custom web and app development for small businesses."
+  },
+  {
+    "name": "FitCore Gym",
+    "address": "99 Wellness Way, Miami, FL",
+    "phone": "+233-252-673-885",
+    "website": "https://fitcore.example.com",
+    "image": "fitcore.jpg",
+    "membership_level": 2,
+    "description": "24/7 access gym with state-of-the-art equipment."
+  },
+  {
+    "name": "BakeMeHappy",
+    "address": "15 Sweet Ave, Nashville, TN",
+    "phone": "+233-242-223-151",
+    "website": "https://bakemehappy.example.com",
+    "image": "bakemehappy.jpg",
+    "membership_level": 1,
+    "description": "Artisan bakery specializing in custom cakes and pastries."
+  },
+  {
+    "name": "Rapid Courier Services",
+    "address": "456 Express Blvd, Chicago, IL",
+    "phone": "+233-242-259-681",
+    "website": "https://rapidcourier.example.com",
+    "image": "rapidcourier.jpg",
+    "membership_level": 2,
+    "description": "Fast and reliable same-day delivery services."
+  },
+  {
+    "name": "Urban Bloom Florists",
+    "address": "88 Blossom St, Seattle, WA",
+    "phone": "+233-552-113-001",
+    "website": "https://urbanbloom.example.com",
+    "image": "urbanbloom.jpg",
+    "membership_level": 1,
+    "description": "Chic floral designs for every occasion."
+  },
+  {
+    "name": "EduPath Tutors",
+    "address": "67 Academy Rd, Boston, MA",
+    "phone": "+233-241-773-055",
+    "website": "https://edupath.example.com",
+    "image": "edupath.jpg",
+    "membership_level": 3,
+    "description": "Expert tutoring and test prep for all ages."
+  },
+  {
+    "name": "Cozy Nest Interiors",
+    "address": "12 Decor Way, Atlanta, GA",
+    "phone": "+233-553-333-242",
+    "website": "https://cozynest.example.com",
+    "image": "cozynest.jpg",
+    "membership_level": 2,
+    "description": "Interior design services for cozy modern homes."
+  }
+]

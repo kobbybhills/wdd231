@@ -33,7 +33,7 @@
 
   #mainNav.show {
     display: block;
-    width: 30%;
+    width:  100%;
     position: absolute; 
     right: 0;
     top: 10;
