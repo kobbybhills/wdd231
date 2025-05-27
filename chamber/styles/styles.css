@@ -343,6 +343,7 @@ footer {
     border-radius: 5px;
     font-size: 1.2rem;
     transition: background-color 0.3s ease;
+    
 }
 
 .call-to-action .button:hover {
@@ -535,8 +536,9 @@ span p{
   }
 
   .call-to-action .button {
-   padding: 10px 20px;
+   padding: 12px 22px;
     font-size: 0.5rem;
+    font-size: large;
     
 }
 
@@ -607,9 +609,10 @@ span p{
     margin-bottom: 0.5rem;
   }
 
-    .call-to-action .button {
-   padding: 10px 20px;
+ .call-to-action .button {
+   padding: 12px 22px;
     font-size: 0.5rem;
+    font-size: large;
     
 }
 
@@ -648,9 +651,10 @@ span p{
     margin-bottom: 0.5rem;
   }
 
-    .call-to-action .button {
-   padding: 10px 20px;
+   .call-to-action .button {
+   padding: 12px 22px;
     font-size: 0.5rem;
+    font-size: large;
     
 }
 
