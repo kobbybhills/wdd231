@@ -32,7 +32,6 @@ header {
 header h1 {
     margin-bottom: 0.5rem;
     
-    
 }
 
 header img{
@@ -74,8 +73,6 @@ header nav a:hover {
     border-radius: 5px;
     text-decoration: underline;
 }
-
-
 
 main {
     max-width: 990px;
@@ -480,6 +477,7 @@ span p{
   header {
     flex-direction: column;
     text-align: center;
+    font-size: 0.8rem;
   }
 
   header img {
@@ -534,10 +532,16 @@ span p{
   .hero-content p {
     font-size: 0.8rem;
     margin-bottom: 1.0rem;
+  }
+
+  .call-to-action .button {
+   padding: 10px 20px;
+    font-size: 0.5rem;
+    
 }
 
 .hero-content a {
-    font-size: 1.0rem;
+    font-size: 0.8rem;
     margin-bottom: 1.0rem;
     color: #03a9f4;
 }
@@ -602,6 +606,18 @@ span p{
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
+
+    .call-to-action .button {
+   padding: 10px 20px;
+    font-size: 0.5rem;
+    
+}
+
+.hero-content a {
+    font-size: 0.8rem;
+    margin-bottom: 1.0rem;
+    color: #03a9f4;
+}
 }
 
 
@@ -631,6 +647,18 @@ span p{
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
+
+    .call-to-action .button {
+   padding: 10px 20px;
+    font-size: 0.5rem;
+    
+}
+
+.hero-content a {
+    font-size: 0.8rem;
+    margin-bottom: 1.0rem;
+    color: #03a9f4;
+}
 }
 
 
