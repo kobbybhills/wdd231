@@ -526,7 +526,21 @@ span p{
   .members.list .member-card a {
     margin: 10px auto 0;
   }
+  .hero-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
 
+  .hero-content p {
+    font-size: 0.8rem;
+    margin-bottom: 1.0rem;
+}
+
+.hero-content a {
+    font-size: 1.0rem;
+    margin-bottom: 1.0rem;
+    color: #03a9f4;
+}
   footer {
     font-size: 0.8rem;
     padding: 1rem 0.5rem;
@@ -584,6 +598,10 @@ span p{
   .members.list .member-card a {
     margin: 10px auto 0;
   }
+   .hero-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 
@@ -607,6 +625,11 @@ span p{
   .view-toggle {
     display: none;
     justify-content: center;
+  }
+
+   .hero-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 
