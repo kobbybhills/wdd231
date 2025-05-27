@@ -507,7 +507,9 @@ span p{
     width: 100%;
     margin-bottom: 10px;
   }
-
+  span p{
+  margin-bottom: 10px;
+  }
   .member-card {
     padding: 1rem;
   }
@@ -558,7 +560,9 @@ span p{
     flex-wrap: wrap;
     justify-content: center;
   }
-
+   span p{
+  margin-bottom: 10px;
+}
   .view-toggle button {
     margin: 5px;
     padding: 10px 20px;
@@ -596,6 +600,9 @@ span p{
   .member-card {
     padding: 1.5rem;
   }
+   span p{
+  margin-bottom: 10px;
+}
 
   .view-toggle {
     display: none;
