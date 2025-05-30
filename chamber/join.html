@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber - Accra Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership with the Accra Chamber of Commerce.">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Join the Chamber - Accra Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://your-github-username.github.io/wdd231/chamber/images/hero-accra.webp">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/join.html">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="Accra Chamber of Commerce Logo" width="100" height="100">
+        </a>
+        <h1 class="gradient-text">Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h1>Membership Application</h1>
+        <form method="get" action="thankyou.html">
+
+            <label for="fname">First Name*</label>
+            <input type="text" id="fname" name="fname" required title="Please enter your first name" autocomplete="given-name">
+
+            <label for="lname">Last Name*</label>
+            <input type="text" id="lname" name="lname" required title="Please enter your last name" autocomplete="family-name">
+
+            <label for="orgtitle">Organizational Title</label>
+            <input type="text" id="orgtitle" name="orgtitle" title="Please enter your organizational title (alpha characters, hyphens, spaces only, min 7 chars)" autocomplete="organization-title" pattern="[a-zA-Z\s\-]{7,}">
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required title="Please enter a valid email address" autocomplete="email" placeholder="example@example.com">
+
+            <label for="phone">Mobile Phone Number*</label>
+            <input type="tel" id="phone" name="phone" required title="Please enter your mobile phone number" autocomplete="tel">
+
+            <label for="orgname">Business/Organization Name*</label>
+            <input type="text" id="orgname" name="orgname" required title="Please enter your business or organization's name" autocomplete="organization">
+
+            <fieldset class="membership-level-fieldset">
+                <legend>Membership Level*</legend>
+                <label>
+                    <input type="radio" name="membershipLevel" value="NP" required> NP Membership
+                </label>
+                <label>
+                    <input type="radio" name="membershipLevel" value="Bronze"> Bronze Membership
+                </label>
+                <label>
+                    <input type="radio" name="membershipLevel" value="Silver"> Silver Membership
+                </label>
+                <label>
+                    <input type="radio" name="membershipLevel" value="Gold"> Gold Membership
+                </label>
+            </fieldset>
+
+            <label for="description">Business Description</label>
+            <textarea id="description" name="description" title="Provide a brief description of your business or organization" rows="5"></textarea>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <input type="submit" value="Join the Chamber">
+        </form>
+
+        <div class="membership-cards-container">
+            <div class="membership-card">
+                <h3>NP Membership</h3>
+                <p>For non-profit organizations.</p>
+                <button type="button" class="modal-trigger" data-modal="modal-np">Learn More</button>
+            </div>
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <p>Ideal for small businesses.</p>
+                <button type="button" class="modal-trigger" data-modal="modal-bronze">Learn More</button>
+            </div>
+            <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <p>Enhanced benefits for growing businesses.</p>
+                <button type="button" class="modal-trigger" data-modal="modal-silver">Learn More</button>
+            </div>
+            <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <p>Premium benefits for established businesses.</p>
+                <button type="button" class="modal-trigger" data-modal="modal-gold">Learn More</button>
+            </div>
+        </div>
+
+        <dialog id="modal-np">
+            <h3>NP Membership Benefits</h3>
+            <p>This membership is free and designed for non-profit organizations. Benefits include:</p>
+            <ul>
+                <li>Basic listing in the Chamber Directory.</li>
+                <li>Access to the monthly Chamber newsletter.</li>
+                <li>Invitation to general member meetings and networking events.</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="modal-bronze">
+            <h3>Bronze Membership Benefits</h3>
+            <p>Perfect for start-ups and small businesses. Benefits include:</p>
+            <ul>
+                <li>All NP Membership benefits.</li>
+                <li>Enhanced listing in the Chamber Directory.</li>
+                <li>Discounts on selected Chamber events and workshops.</li>
+                <li>Opportunity to host one networking event per year.</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="modal-silver">
+            <h3>Silver Membership Benefits</h3>
+            <p>Designed for growing businesses looking for more exposure. Benefits include:</p>
+            <ul>
+                <li>All Bronze Membership benefits.</li>
+                <li>Priority placement in the Chamber Directory.</li>
+                <li>Opportunities for speaking engagements at Chamber events.</li>
+                <li>One complimentary advertisement in the monthly newsletter.</li>
+                <li>Exclusive access to advanced business training.</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="modal-gold">
+            <h3>Gold Membership Benefits</h3>
+            <p>Our premium package for established businesses seeking maximum impact. Benefits include:</p>
+            <ul>
+                <li>All Silver Membership benefits.</li>
+                <li>Spotlight feature on the Chamber homepage for one month per year.</li>
+                <li>Unlimited complimentary attendance to Chamber events.</li>
+                <li>Dedicated support from a Chamber liaison.</li>
+                <li>Priority invitations to exclusive stakeholder roundtables.</li>
+                <li>Opportunities for strategic partnerships and collaborations.</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Douglas Justice | WDD 231 | <span id="lastModified"></span></p>
+    </footer>
+    
+    <script src="scripts/join.js"></script>
+</body>
+</html>

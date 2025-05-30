@@ -1,0 +1,80 @@
+
+
+/* styles/thankyou.css */
+
+.thankyou-main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.thankyou-main h1 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.thankyou-main p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.form-summary {
+    text-align: left;
+    background-color: #f0f8ff; /* Light blue background */
+    border: 1px solid #e0efff;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 500px; /* Constrain width of summary */
+}
+
+.form-summary ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.form-summary li {
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px dashed #e5e5e5;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-summary li:last-child {
+    border-bottom: none; /* No border for the last item */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.form-summary strong {
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+    min-width: 150px; /* Ensure labels align somewhat */
+    display: inline-block; /* Allows min-width to work */
+}
+
+.button-link {
+    display: inline-block;
+    background-color: var(--highlight-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover,
+.button-link:focus {
+    background-color: var(--secondary-color);
+    outline: none;
+}
