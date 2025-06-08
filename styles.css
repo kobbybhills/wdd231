@@ -1,0 +1,75 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Replace with your chosen body font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4; /* Replace with your chosen background color */
+    color: #333; /* Replace with your chosen body text color */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    color: #0056b3; /* Replace with your chosen heading color */
+    font-family: 'Georgia', serif; /* Replace with your chosen heading font */
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #0056b3; /* Replace with your chosen heading color */
+    font-family: 'Georgia', serif; /* Replace with your chosen heading font */
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* List Styles */
+ul, ol {
+    margin-left: 20px;
+}
+
+li p {
+    margin-bottom: 5px;
+}
+
+/* Wireframe Placeholders (for visual indication if you don't use images) */
+.wireframe-placeholder {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: #666;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+}
+
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    color: #666;
+    font-size: 0.9em;
+}
