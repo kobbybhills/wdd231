@@ -39,6 +39,12 @@ section h2 {
     margin-bottom: 15px;
 }
 
+  section div img{
+    max-width: 100%;
+    height: auto;
+
+  }
+
 /* List Styles */
 ul, ol {
     margin-left: 20px;
@@ -76,10 +82,3 @@ footer {
 
 
 
-@media screen and (max-width: 480px) and (min-width: 481px) and (max-width: 768px){
-  section div img{
-    max-width: 100%;
-    height: auto;
-
-  }
-}
