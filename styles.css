@@ -1,11 +1,11 @@
 /* General Body Styles */
 body {
-    font-family: 'Arial', sans-serif; /* Replace with your chosen body font */
+    font-family: 'Arial', sans-serif; 
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4; /* Replace with your chosen background color */
-    color: #333; /* Replace with your chosen body text color */
+    background-color: #f4f4f4; 
+    color: #333; 
 }
 
 /* Header Styles */
@@ -54,7 +54,7 @@ li p {
     margin-bottom: 5px;
 }
 
-/* Wireframe Placeholders (for visual indication if you don't use images) */
+/* Wireframe Placeholders  */
 .wireframe-placeholder {
     border: 2px dashed #ccc;
     padding: 20px;

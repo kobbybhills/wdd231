@@ -56,8 +56,10 @@ header nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    border-radius: 8px;
 }
 
 header nav a {
@@ -68,11 +70,12 @@ header nav a {
     transition: background-color 0.3s ease;
 }
 
-header nav a:hover {
+header nav a:hover, nav li a.active {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     text-decoration: underline;
 }
+
 
 main {
     max-width: 990px;
@@ -684,13 +687,6 @@ span p{
     margin: 2rem auto;
   }
 }
-
-
-
-
-
-
-
 
 
 

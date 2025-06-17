@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Accra: Explore local attractions, demographics, and community events in Ghana's vibrant capital city through the Accra Chamber of Commerce.">
+    <meta name="author" content="Douglas Justice">
+    <meta property="og:title" content="Discover Accra | Accra Chamber of Commerce">
+    <meta property="og:description" content="Discover Accra: Explore local attractions, demographics, and community events in Ghana's vibrant capital city.">
+    <meta property="og:image" content="images/og-discover-image.jpg"> <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/discover.html">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <title>Discover Accra | Accra Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Our Company Logo">
+        <h1 class="gradient-text">Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover-page-grid">
+        <div class="discover-header-area">
+            <h1>Discover Our Vibrant City</h1>
+        </div>
+        
+        <aside class="sidebar-area">
+            <section class="demographics">
+                <h3>Accra At a Glance</h3>
+                <dl>
+                    <dt>Population:</dt>
+                    <dd>Approx. 2.6 million (City)</dd>
+                    <dt>Metro Area:</dt>
+                    <dd>Approx. 5.4 million</dd>
+                    <dt>Year Founded:</dt>
+                    <dd>15th Century</dd>
+                    <dt>Major Industries:</dt>
+                    <dd>Financial Services, Tech, Manufacturing, Tourism, Trade</dd>
+                </dl>
+            </section>
+
+            <section class="calendar">
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li><strong>Ghana Fashion Week:</strong> Oct 10 - 13, 2025</li>
+                    <li><strong>Afrochella Festival:</strong> Dec 28, 2025</li>
+                    <li><strong>Accra Food Festival:</strong> Mar 15 - 16, 2026</li>
+                </ul>
+            </section>
+
+            <section class="visit-message">
+                <h3>Your Visit</h3>
+                <p id="visitor-message">Loading visitor information...</p>
+            </section>
+        </aside>
+
+        <div class="attractions-area">
+            <h2>Local Attractions</h2>
+            <div id="attraction-cards-container" class="attraction-cards">
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Douglas Justice | WDD 231 | <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/discover.js" defer></script>
+</body>
+</html>

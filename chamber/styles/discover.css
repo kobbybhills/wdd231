@@ -1,0 +1,261 @@
+
+.discover-page-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-areas:
+        "discover-header-area"
+        "sidebar-area"
+        "attractions-area"; 
+    gap: 2rem; 
+    padding: 2rem; 
+    max-width: 990px;
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+
+.discover-header-area {
+    grid-area: discover-header-area;
+    text-align: center;
+    margin-bottom: 0; 
+}
+
+.discover-header-area h1 {
+    font-size: 2.5rem;
+    color: #204060;
+    margin-bottom: 0.5rem; 
+}
+
+.sidebar-area {
+    grid-area: sidebar-area;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar-area section {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-area h3 {
+    color: #204060;
+    border-bottom: 2px solid #5484cb;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+
+.demographics dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+}
+
+.demographics dt {
+    font-weight: bold;
+    color: #333;
+}
+
+.demographics dd {
+    margin-left: 0;
+    color: #555;
+}
+
+/* Calendar List */
+.calendar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.calendar li {
+    background-color: #e0f7fa;
+    padding: 0.75rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+/* The Visit Message */
+.visit-message p {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #0d47a1;
+    text-align: center;
+}
+
+.attractions-area {
+    grid-area: attractions-area;
+}
+
+.attractions-area h2 {
+    font-size: 2rem;
+    color: #204060;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Styles for the dynamically loaded attraction cards */
+.attraction-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.attraction-card {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.attraction-card h2 {
+    font-size: 1.4rem;
+    margin: 1rem 1rem 0.5rem;
+    color: #204060;
+    text-align: center;
+}
+
+.attraction-card figure {
+    margin: 0;
+    flex-shrink: 0; /* Prevent image from shrinking */
+    width: 100%; /* Ensure figure takes full width */
+    height: 200px; /* Fixed height for image container */
+    overflow: hidden; /* Hide overflow if image is object-fit: cover */
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* Cover the figure area */
+    object-position: center;
+}
+
+.attraction-card figcaption {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: #555;
+    background-color: #f0f0f0;
+    font-size: 0.9em;
+}
+
+.attraction-card address {
+    font-style: normal;
+    font-size: 0.9em;
+    color: #666;
+    margin: 0.5rem 1rem;
+    text-align: center;
+}
+
+.attraction-card p {
+    font-size: 0.9em;
+    color: #444;
+    line-height: 1.5;
+    margin: 0.5rem 1rem;
+    flex-grow: 1; /* Allow description to take available space */
+    text-align: center;
+}
+
+.attraction-card .learn-more {
+    display: inline-block;
+    background-color: #5484cb;
+    color: white;
+    padding: 0.6em 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 1rem auto; /* Center the button */
+    font-weight: bold;
+    font-size: 0.85em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.attraction-card .learn-more:hover {
+    background-color: #4a75b7;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Responsive Layout for Discover Page --- */
+
+/* Medium Screens (641px to 1024px) */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .discover-page-grid {
+        grid-template-columns: 280px 1fr; /* Sidebar fixed width, main content fills rest */
+        grid-template-areas:
+            "discover-header-area discover-header-area"
+            "sidebar-area attractions-area";
+    }
+
+    /* Image hover effect for medium screens */
+    .attraction-card img:hover {
+        transform: scale(1.05); /* Example effect: slightly enlarge */
+        filter: brightness(1.1); /* Example effect: slight brightness increase */
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+}
+
+/* Large Screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .discover-page-grid {
+        grid-template-columns: 320px 1fr; /* Slightly wider sidebar for large screens */
+        grid-template-areas:
+            "discover-header-area discover-header-area"
+            "sidebar-area attractions-area";
+    }
+
+    /* Image hover effect for large screens */
+    .attraction-card img:hover {
+        transform: scale(1.05) rotate(1deg); /* Example effect: enlarge and slight rotate */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Example effect: stronger shadow */
+        filter: grayscale(0.2); /* Example effect: slight grayscale */
+        transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    }
+}
+
+/* Mobile-specific adjustments to original styles (if needed) */
+@media screen and (max-width: 640px) {
+    /* Ensure no image hover effects on mobile */
+    .attraction-card img:hover {
+        transform: none;
+        filter: none;
+        box-shadow: none;
+    }
+}
+
+/* Adjustments for existing main in responsive media queries to not interfere with .discover-page-grid */
+/* REMOVE OR ADJUST THESE FROM YOUR ORIGINAL CSS IF THEY OVERRIDE .discover-page-grid */
+/* Example: If you have a global 'main' rule that sets width/margin/padding, ensure it doesn't conflict.
+   The .discover-page-grid now handles these properties for the main content area.
+   You might want to make your original `main` styling more general, or specific to `index.html` only.
+*/
+
+/* Example adjustment if main had a fixed width that interferes */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    main {
+        width: auto; /* Allow discover-page-grid to manage width */
+        padding: 0; /* Allow discover-page-grid to manage padding */
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    main {
+        max-width: none; 
+       margin: 0; /* Allow discover-page-grid to manage margin */
+        padding: 0; /* Allow discover-page-grid to manage padding */
+    }
+}

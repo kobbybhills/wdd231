@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Independence Arch",
+        "address": "28 February Rd, Accra",
+        "description": "A monumental arch in Accra, Ghana, serving as a symbol of Ghana's independence from British colonial rule. It is part of the Independence Square complex.",
+        "image": "images/independence-arch.webp",
+        "link": "https://en.wikipedia.org/wiki/Independence_Arch_(Ghana)"
+    },
+    {
+        "name": "Kwame Nkrumah Mausoleum",
+        "address": "High St, Accra",
+        "description": "The final resting place of Ghana's first President, Osagyefo Dr. Kwame Nkrumah. It's a significant historical site with a museum dedicated to his life.",
+        "image": "images/nkrumah-mausoleum.webp",
+        "link": "https://ghanatourism.org/listing/kwame-nkrumah-mausoleum/"
+    },
+    {
+        "name": "Makola Market",
+        "address": "Kojo Thompson Rd, Accra",
+        "description": "Accra's busiest and largest open-air market, offering a vibrant sensory experience with everything from fresh produce to textiles and crafts.",
+        "image": "images/makola-market.jpg",
+        "link": "https://en.wikipedia.org/wiki/Makola_Market"
+    },
+    {
+        "name": "Labadi Pleasure Beach",
+        "address": "Labadi Rd, Accra",
+        "description": "One of Accra's most popular beaches, known for its lively atmosphere, local food stalls, cultural performances, and horse riding.",
+        "image": "images/labadi-beach.jpg",
+        "link": "https://ghanatourism.org/listing/labadi-beach/"
+    },
+    {
+        "name": "Jamestown Lighthouse",
+        "address": "Lighthouse Ave, Accra",
+        "description": "A historic lighthouse in the Jamestown area, offering panoramic views of Accra's coastline and the bustling fishing community below.",
+        "image": "images/jamestown-lighthouse.jpg",
+        "link": "https://en.wikipedia.org/wiki/Jamestown_Lighthouse"
+    },
+    {
+        "name": "W.E.B. Du Bois Memorial Centre",
+        "address": "1 Circular Rd, Cantonments, Accra",
+        "description": "Dedicated to the life and work of the prominent African-American civil rights activist and Pan-Africanist, W.E.B. Du Bois, who spent his final years in Ghana.",
+        "image": "images/dubois-centre.jpg",
+        "link": "https://ghanatourism.org/listing/web-du-bois-memorial-center/"
+    },
+    {
+        "name": "Osu Castle (Christianborg)",
+        "address": "Gamel Abdul Nasser Ave, Accra",
+        "description": "A historic castle built by the Danes, serving as a government seat for centuries. It played a significant role in the transatlantic slave trade.",
+        "image": "images/osu-castle.jpg",
+        "link": "https://en.wikipedia.org/wiki/Osu_Castle"
+    },
+    {
+        "name": "Ghana National Museum",
+        "address": "Barnes Rd, Accra",
+        "description": "The largest and oldest of the museums under the administration of the Ghana Museums and Monuments Board, showcasing Ghana's rich history, culture, and art.",
+        "image": "images/national-museum.jpg",
+        "link": "https://en.wikipedia.org/wiki/Ghana_National_Museum"
+    }
+]
