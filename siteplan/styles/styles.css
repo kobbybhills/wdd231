@@ -167,10 +167,16 @@ img {
     height: 3px;
     background-color: var(--white);
     left: 0;
-    transition: transform 0.3s ease;
+    
 }
+
+.hamburger::before,
+.hamburger::after {
+    transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
+}
+
 .hamburger::before { top: -8px; }
-.hamburger::after { bottom: -8px; }
+.hamburger::after { bottom: 8px; }
 
 /* --- Hero Section --- */
 .hero {
@@ -288,13 +294,13 @@ img {
 
 .hero .subtitle {
     font-size: 1.2rem;
-    max-width: 700px; /* Adjust max-width for subtitle */
+    max-width: 700px; 
     margin: 0 auto 2rem;
 }
 
-/* --- Why Learn Asante Twi? Section --- */
+
 .why-learn {
-    padding: 4rem 0 5rem; /* Adjusted padding as per wireframe spacing */
+    padding: 4rem 0 5rem; 
 }
 
 .why-learn h2 {
@@ -309,7 +315,7 @@ img {
 }
 
 .why-learn-card {
-    /* This card style is more minimal than previous 'feature-card' */
+    
     text-align: center;
     padding: 1.5rem; /* Slightly less padding */
 }
@@ -325,13 +331,13 @@ img {
 }
 
 .why-learn-card p {
-    font-size: 0.95rem; /* Smaller paragraph text */
+    font-size: 0.95rem; 
     color: #555;
 }
 
-/* --- Twi Basics for Travelers Section --- */
+
 .twi-basics-travelers {
-    background-color: var(--light-gray); /* Background as per wireframe */
+    background-color: var(--light-gray); 
     padding: 5rem 0;
 }
 
@@ -485,7 +491,7 @@ img {
     }
 
     .main-nav .nav-menu.active {
-        display: flex; /* Show when active */
+       
         transform: translateX(0); /* Slide in */
     }
 
