@@ -1,0 +1,558 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+/* --- CSS Custom Properties (Variables) --- */
+:root {
+    --midnight-blue: #2C3E50;
+    --sunrise-orange: #F39C12;
+    --light-gray: #f4f4f4;
+    --white: #ffffff;
+    --text-color: #333;
+
+    --font-heading: 'Merriweather', serif;
+    --font-body: 'Roboto', sans-serif;
+
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+/* --- Base & Reset Styles --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white);
+    min-height: 100vh; /* Ensure footer stays at bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1; /* Allow main content to grow and push footer down */
+}
+
+/* --- Utility Classes --- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--midnight-blue);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 3rem; text-align: center; }
+h2 { font-size: 2.5rem; text-align: center; }
+h3 { font-size: 1.5rem; }
+
+a {
+    color: var(--sunrise-orange);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* --- Button Styles --- */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: var(--sunrise-orange);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: var(--white);
+    color: var(--sunrise-orange);
+    border: 2px solid var(--sunrise-orange);
+}
+
+/* --- Header & Navigation --- */
+.site-header {
+    background-color: var(--midnight-blue);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-body); /* Wireframe shows simpler font */
+    font-size: 1.5rem;
+    font-weight: 500; /* Adjusted for wireframe appearance */
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-nav .nav-menu {
+    list-style: none;
+    display: flex; /* Always display flex for desktop */
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: var(--white);
+    font-weight: 500;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.main-nav a.active-nav-link {
+    border-color: var(--sunrise-orange);
+    color: var(--sunrise-orange); 
+    
+}
+
+.main-nav a:hover {
+    border-color: var(--sunrise-orange);
+}
+
+.menu-toggle {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px; /* Add padding for easier tap target */
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    position: relative;
+    transition: background-color 0.1s ease-in-out;
+}
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    left: 0;
+    transition: transform 0.3s ease;
+}
+.hamburger::before { top: -8px; }
+.hamburger::after { bottom: -8px; }
+
+/* --- Hero Section --- */
+.hero {
+    /* Background area on wireframe is abstract, using light-gray */
+    background-color: var(--light-gray); 
+    padding: 6rem 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc; /* Line below hero in wireframe */
+}
+
+
+
+/* --- General Page Hero for Subpages --- */
+.page-hero {
+    background-color: var(--light-gray);
+    padding: 4rem 0; /* Slightly less padding than main hero */
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 3rem; /* Space before content section */
+}
+
+.page-hero h1 {
+    font-size: 2.5rem; /* Smaller H1 for subpages */
+    margin-bottom: 0.8rem;
+}
+
+.page-hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- General Page Content Section --- */
+.page-content {
+    padding: 2rem 0 5rem; /* Padding top/bottom */
+}
+
+.page-content h3 {
+    font-size: 1.8rem;
+    color: var(--midnight-blue);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.page-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-content ul li {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 0.5rem;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.page-content ul li::before {
+    content: '📚'; /* Example icon, use a real icon if desired */
+    font-size: 1.2em;
+    color: var(--sunrise-orange);
+    flex-shrink: 0;
+}
+
+.page-content p {
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.page-content .btn {
+    margin-top: 1rem;
+    display: block; /* Make button full width on small screens */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Specific styling for contact form */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--midnight-blue);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    max-width: 700px; /* Adjust max-width for subtitle */
+    margin: 0 auto 2rem;
+}
+
+/* --- Why Learn Asante Twi? Section --- */
+.why-learn {
+    padding: 4rem 0 5rem; /* Adjusted padding as per wireframe spacing */
+}
+
+.why-learn h2 {
+    margin-bottom: 3rem; /* More space below heading */
+}
+
+.why-learn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 0; /* No margin-top here as gap handles spacing */
+}
+
+.why-learn-card {
+    /* This card style is more minimal than previous 'feature-card' */
+    text-align: center;
+    padding: 1.5rem; /* Slightly less padding */
+}
+
+.why-learn-card img {
+    height: 50px; /* Smaller icon size */
+    margin: 0 auto 1rem;
+}
+
+.why-learn-card h3 {
+    font-size: 1.3rem; /* Slightly smaller heading */
+    margin-bottom: 0.5rem;
+}
+
+.why-learn-card p {
+    font-size: 0.95rem; /* Smaller paragraph text */
+    color: #555;
+}
+
+/* --- Twi Basics for Travelers Section --- */
+.twi-basics-travelers {
+    background-color: var(--light-gray); /* Background as per wireframe */
+    padding: 5rem 0;
+}
+
+.twi-basics-travelers h2 {
+    margin-bottom: 3rem;
+}
+
+.basics-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px; 
+    margin: 0 auto; /* Center the cards on mobile */
+     gap: 1.5rem;
+    
+}
+
+.basics-card {
+    background-color: var(--white);
+    padding: 1.5rem 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center; /* Vertically align icon and text */
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    text-align: left; /* Text alignment */
+    transition: transform 0.2s ease;
+}
+
+.basics-card:hover {
+    transform: translateY(-5px);
+}
+
+.basics-card img {
+    height: 60px; /* Icon size */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+    border-radius: 8px;
+    border:solid #F39C12;
+    
+}
+
+.basics-card .text-content {
+    flex-grow: 1; /* Allow text content to take remaining space */
+}
+
+.basics-card h3 {
+    margin-bottom: 0.4rem;
+}
+.basics-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* --- DID YOU KNOW? Section --- */
+.did-you-know {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.did-you-know h2 {
+    margin-bottom: 3rem;
+}
+
+.did-you-know-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to single column for mobile */
+    gap: 1.5rem;
+    max-width: 900px; /* Constrain grid width */
+    margin: 0 auto 3rem; /* Center and add space below grid */
+}
+
+.placeholder-box {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Make it square */
+    border: 1px dashed #ccc; 
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #bbb;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: var(--border-radius);
+}
+
+.placeholder-box::before {
+    content: "The Asante Kingdom was and is one of West Africa’s wealthiest and strong empires.";
+}
+
+.did-you-know-text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.did-you-know-text p:first-of-type {
+    margin-bottom: 1rem;
+}
+
+/* --- Footer --- */
+.site-footer {
+    background-color: var(--midnight-blue);
+    color: var(--light-gray);
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.site-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Closer spacing for footer text */
+}
+
+.site-footer p a {
+    color: var(--sunrise-orange); /* Link color in footer */
+    font-weight: 500;
+}
+
+
+/* --- Responsive Styles */
+
+/* Mobile adjustments (up to 768px) */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.3rem; }
+
+    .hero { padding: 4rem 0; }
+    .hero .subtitle { font-size: 1rem; }
+    .btn { padding: 10px 20px; font-size: 0.9rem; }
+
+    /* Mobile Nav */
+    .main-nav .nav-menu {
+        display: none; /* Hide by default */
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--midnight-blue);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem; /* Spacing between nav items */
+        font-size: 1.3rem; /* Larger font for mobile menu */
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%); /* Start off-screen */
+    }
+
+    .main-nav .nav-menu.active {
+        display: flex; /* Show when active */
+        transform: translateX(0); /* Slide in */
+    }
+
+    .menu-toggle {
+        display: block; /* Show hamburger */
+        z-index: 1001; /* Ensure it's above the overlay menu */
+    }
+    
+    /* Hamburger animation when active */
+    .menu-toggle.active .hamburger {
+        background-color: transparent;
+    }
+    .menu-toggle.active .hamburger::before {
+        transform: rotate(45deg) translate(5px, 8px); /* Adjusted transform */
+    }
+    .menu-toggle.active .hamburger::after {
+        transform: rotate(-45deg) translate(5px, -8px); /* Adjusted transform */
+    }
+
+    /* Twi Basics cards stack vertically on mobile */
+    .basics-card {
+        flex-direction: column; /* Stack content within card */
+        text-align: center;
+    }
+    .basics-card img {
+        margin-bottom: 0.8rem; /* Space below icon */
+    }
+}
+
+/* Tablet / Medium Screens (769px to 1024px) */
+@media (min-width: 769px) {
+    .site-header .container {
+        justify-content: space-between; /* Logo left, nav right */
+    }
+
+    .main-nav .nav-menu {
+        display: flex; /* Always visible */
+        transform: translateX(0); /* No transform needed */
+    }
+    .menu-toggle {
+        display: none; /* Hide hamburger */
+    }
+
+    .twi-basics-travelers .basics-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        max-width: 100%; /* Use full container width */
+    }
+
+    .basics-card {
+        flex-direction: row; /* Horizontal layout for cards */
+        text-align: left;
+    }
+    .basics-card img {
+        margin-bottom: 0;
+    }
+
+    .did-you-know-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+}
+
+/* Desktop / Large Screens (1025px and above) */
+@media (min-width: 1025px) {
+    h1 { font-size: 3.5rem; } /* Slightly larger for desktop */
+    h2 { font-size: 2.8rem; }
+
+    .twi-basics-travelers .basics-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    }
+}
